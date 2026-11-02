@@ -11,7 +11,7 @@ Whisker & Wag Pet Co. – Website Development (WEDE5020 PoE, Parts 1–3)
 - **Year:** 2026
 
 ## Live Site and Repository
-- **Live website:** https://github.com/ST10519744/WEDEPART3
+- **Live website:** https://monumental-blini-157a58.netlify.app/
 - **Repository:** https://github.com/YOURUSERNAME/whiskers_and_wag
 - **Hosting:** Netify (free, served over HTTPS)
 
