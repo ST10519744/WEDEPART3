@@ -80,7 +80,7 @@ Home (index.html)
 - **Off-page SEO (plan):** list the business on Google Business Profile for both branches, share the site on Facebook where the store already has about 4,800 followers, and ask local pet and veterinary businesses for backlinks.
 
 ### Deployment
-Deployed on GitHub Pages: repository **Settings → Pages → Deploy from a branch → `main` / root**.
+Deployed on netify: repository **Settings → Pages → Deploy from a branch → `main` / root**.
 
 ## Feedback from Part 2 and How It Was Addressed
 | Part 2 feedback | Action taken |
@@ -92,9 +92,23 @@ Deployed on GitHub Pages: repository **Settings → Pages → Deploy from a bran
 ## Technologies Used
 HTML5, CSS3 (Grid, Flexbox, media queries), JavaScript (ES6, Fetch API, IntersectionObserver), Google Maps embeds, Git and GitHub, GitHub Pages, VS Code.
 
+## Responsive Design Testing
+Tested on a PC browser (desktop) and on a phone, in portrait and landscape.
+
+![Desktop (PC) screenshot 1](screenshots/pc1.png)
+![Desktop (PC) screenshot 2](screenshots/pc2.png)
+![Desktop (PC) screenshot 3](screenshots/pc3.png)
+![Desktop (PC) screenshot 4](screenshots/pc4.png)
+![Desktop (PC) screenshot 5](screenshots/pc5.png)
+
+![Phone screenshot 1](screenshots/phone1.jpeg)
+![Phone screenshot 2](screenshots/phone2.jpeg)
+![Phone screenshot 3](screenshots/phone3.jpeg)
+![Phone screenshot 4](screenshots/phone4.jpeg)
+![Phone screenshot 5](screenshots/phone5.jpeg)
 ## Changelog
 Format: **date, file(s): what changed and why.** Entries marked *(feedback)* respond to Part 2 marks.
-
+- **[2026-11-02] `screenshots/`, `README.md`:** Added desktop and phone screenshots and a Responsive Design Testing section.
 ### Part 3
 - **[2026-10-29] all HTML files *(SEO)*:** Rewrote each page's meta keywords as natural phrases and worked every one into that page's visible text, so the keywords match the content.
 - **[2026-10-29] `services.html`, `contact.html`, `about.html`, `enquiries.html` *(SEO)*:** Added Open Graph title, description and type tags (previously only on the home page) for better link previews.
