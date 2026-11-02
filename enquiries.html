@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Product &amp; Dog Grooming Enquiry | Whisker &amp; Wag</title>
+    <meta name="description" content="Ask about the price and availability of pet products or dog grooming at Whisker &amp; Wag in Hatfield and Centurion, Pretoria. Get a cost estimate instantly.">
+    <meta name="keywords" content="pet product enquiry, dog grooming price, product availability, cost estimate">
+    <meta name="author" content="Whisker &amp; Wag Pet Co.">
+    <meta property="og:title" content="Pet Product &amp; Dog Grooming Enquiry | Whisker &amp; Wag">
+    <meta property="og:description" content="Ask about the price and availability of pet products or dog grooming at Whisker &amp; Wag in Hatfield and Centurion, Pretoria. Get a cost estimate instantly.">
+    <meta property="og:type" content="website">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <script src="js_assets/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="_images/logo-100.png" srcset="_images/logo-100.png 1x, _images/logo-200.png 2x" alt="Whisker &amp; Wag Pet Co. logo" class="logo" width="50" height="50">
+        <p class="site-name">Whisker &amp; Wag Pet Co.</p>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html" aria-current="page">Enquire</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="enquiry-intro">
+            <img src="_images/puppy-in-mailbox.jpg" alt="Beagle puppy peeking out of a mailbox" width="348" height="145">
+            <h1>Ask About a Product or Service</h1>
+            <p>Make a pet product enquiry or ask about our dog grooming price. Choose what you're interested in and we'll show you the cost estimate and product availability straight away. Browse the full range on our <a href="services.html">services page</a> first if you like. For anything else, use the <a href="contact.html">contact page</a>.</p>
+        </section>
+
+        <section id="enquiry-section">
+            <h2>Enquiry Form</h2>
+            <form id="enquiry-form" action="https://jsonplaceholder.typicode.com/posts" method="post">
+                <div>
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="60" autocomplete="name">
+                    <p class="error" id="name-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" name="email" required autocomplete="email">
+                    <p class="error" id="email-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="phone">Phone number</label>
+                    <input type="tel" id="phone" name="phone" required data-type="phone" placeholder="012 345 6789" autocomplete="tel">
+                    <p class="error" id="phone-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="item">Product or service</label>
+                    <select id="item" name="item" required>
+                        <option value="">Choose one…</option>
+                    </select>
+                    <p class="error" id="item-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="quantity">Quantity</label>
+                    <input type="number" id="quantity" name="quantity" required min="1" max="20" value="1">
+                    <p class="error" id="quantity-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="date">Preferred date (for grooming)</label>
+                    <input type="date" id="date" name="date">
+                    <p class="error" id="date-error" aria-live="polite"></p>
+                </div>
+                <fieldset>
+                    <legend>How should we reply?</legend>
+                    <label class="choice"><input type="radio" id="pref" name="pref" value="Email" required> Email</label>
+                    <label class="choice"><input type="radio" name="pref" value="Phone"> Phone</label>
+                    <p class="error" id="pref-error" aria-live="polite"></p>
+                </fieldset>
+                <label class="choice"><input type="checkbox" name="restock" value="yes"> Let me know if this item is out of stock and comes back</label>
+                <div>
+                    <label for="message">Your question</label>
+                    <textarea id="message" name="message" rows="4" required minlength="10" maxlength="500"></textarea>
+                    <p class="error" id="message-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label class="choice"><input type="checkbox" id="consent" name="consent" required> I agree to be contacted about this enquiry</label>
+                    <p class="error" id="consent-error" aria-live="polite"></p>
+                </div>
+                <button type="submit">Send enquiry</button>
+                <p id="form-status" aria-live="polite"></p>
+            </form>
+
+            <div class="result-box" id="enquiry-result" hidden>
+                <h3>Your quote</h3>
+                <p id="result-text"></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Whisker &amp; Wag Pet Co. – Hatfield &amp; Centurion, Pretoria</p>
+    </footer>
+</body>
+</html>

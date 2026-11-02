@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Whisker &amp; Wag | Pet Store Hatfield &amp; Centurion</title>
+    <meta name="description" content="Find Whisker &amp; Wag Pet Co. in Hatfield and Centurion, Pretoria. Addresses, opening hours, phone numbers, a map and a contact form.">
+    <meta name="keywords" content="pet store in Hatfield, pet shop in Centurion, opening hours, contact us">
+    <meta name="author" content="Whisker &amp; Wag Pet Co.">
+    <meta property="og:title" content="Contact Whisker &amp; Wag | Pet Store Hatfield &amp; Centurion">
+    <meta property="og:description" content="Find Whisker &amp; Wag Pet Co. in Hatfield and Centurion, Pretoria. Addresses, opening hours, phone numbers, a map and a contact form.">
+    <meta property="og:type" content="website">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <script src="js_assets/script.js" defer></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "PetStore",
+      "name": "Whisker & Wag Pet Co.",
+      "areaServed": "Pretoria",
+      "location": [
+        { "@type": "Place", "name": "Hatfield branch", "address": { "@type": "PostalAddress", "streetAddress": "14 Grosvenor Street", "addressLocality": "Hatfield, Pretoria", "postalCode": "0028", "addressCountry": "ZA" } },
+        { "@type": "Place", "name": "Centurion branch", "address": { "@type": "PostalAddress", "streetAddress": "22 Lenchen Avenue", "addressLocality": "Centurion", "postalCode": "0157", "addressCountry": "ZA" } }
+      ]
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="_images/logo-100.png" srcset="_images/logo-100.png 1x, _images/logo-200.png 2x" alt="Whisker &amp; Wag Pet Co. logo" class="logo" width="50" height="50">
+        <p class="site-name">Whisker &amp; Wag Pet Co.</p>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="enquiries.html">Enquire</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html" aria-current="page">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contact-intro">
+            <img src="_images/dog-with-laptop.jpg" alt="Jack Russell terrier lying beside a laptop" width="300" height="168">
+            <h1>Visit Our Pet Stores in Hatfield and Centurion</h1>
+            <p>Contact us or visit our pet store in Hatfield or our pet shop in Centurion. Our opening hours are listed below, and we're always happy to chat pets in person. Want a price first? Try our <a href="enquiries.html">enquiry form</a>.</p>
+        </section>
+
+        <section id="hatfield-branch">
+            
+            <h2>Hatfield Branch</h2>
+            <p>14 Grosvenor Street, Hatfield, Pretoria, 0028</p>
+            <p>Mon–Fri 8:00–18:00, Sat 8:00–14:00, Sun closed</p>
+            <p>012 345 6789</p>
+        </section>
+
+        <section id="centurion-branch">
+            
+            <h2>Centurion Branch</h2>
+            <p>22 Lenchen Avenue, Centurion, 0157</p>
+            <p>Mon–Fri 8:00–18:00, Sat 8:00–14:00, Sun closed</p>
+            <p>012 987 6543</p>
+        </section>
+
+        <section id="map-section">
+            <h2>Find Us on the Map</h2>
+            <h3>Hatfield Branch</h3>
+            <iframe class="map-frame" title="Map showing the Whisker &amp; Wag Hatfield branch" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=14+Grosvenor+Street,+Hatfield,+Pretoria,+0028&amp;output=embed"></iframe>
+            <h3>Centurion Branch</h3>
+            <iframe class="map-frame" title="Map showing the Whisker &amp; Wag Centurion branch" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps?q=22+Lenchen+Avenue,+Centurion,+0157&amp;output=embed"></iframe>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form id="contact-form" action="#" method="post">
+                <div>
+                    <label for="c-name">Full name</label>
+                    <input type="text" id="c-name" name="name" required minlength="2" maxlength="60" autocomplete="name">
+                    <p class="error" id="c-name-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="c-email">Email address</label>
+                    <input type="email" id="c-email" name="email" required autocomplete="email">
+                    <p class="error" id="c-email-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="c-phone">Phone number (optional)</label>
+                    <input type="tel" id="c-phone" name="phone" data-type="phone" placeholder="012 345 6789" autocomplete="tel">
+                    <p class="error" id="c-phone-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="c-type">Type of message</label>
+                    <select id="c-type" name="type" required>
+                        <option value="">Choose one…</option>
+                        <option>General question</option>
+                        <option>Feedback</option>
+                        <option>Complaint</option>
+                        <option>Pet-sitting referral</option>
+                    </select>
+                    <p class="error" id="c-type-error" aria-live="polite"></p>
+                </div>
+                <div>
+                    <label for="c-message">Message</label>
+                    <textarea id="c-message" name="message" rows="5" required minlength="10" maxlength="1000"></textarea>
+                    <p class="error" id="c-message-error" aria-live="polite"></p>
+                </div>
+                <label class="choice"><input type="checkbox" name="copy" value="yes"> Send me a copy of this message</label>
+                <button type="submit">Prepare email</button>
+            </form>
+
+            <div class="result-box" id="email-ready" hidden>
+                <h3>Your email is ready</h3>
+                <pre id="email-preview"></pre>
+                <a class="button" id="send-email" href="#">Send email</a>
+                <a class="button" id="send-gmail" href="#" target="_blank" rel="noopener noreferrer">Open in Gmail</a>
+                <p>No email app on this device? Use "Open in Gmail" instead.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Whisker &amp; Wag Pet Co. – Hatfield &amp; Centurion, Pretoria</p>
+    </footer>
+</body>
+</html>

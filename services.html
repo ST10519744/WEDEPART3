@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Grooming &amp; Pet Supplies Prices | Whisker &amp; Wag Pretoria</title>
+    <meta name="description" content="Dog grooming prices and pet supplies for dogs, cats and small animals at Whisker &amp; Wag in Hatfield and Centurion, Pretoria. Search and filter our range.">
+    <meta name="keywords" content="dog grooming in Pretoria, pet supplies, cat food, grooming prices">
+    <meta name="author" content="Whisker &amp; Wag Pet Co.">
+    <meta property="og:title" content="Dog Grooming &amp; Pet Supplies Prices | Whisker &amp; Wag Pretoria">
+    <meta property="og:description" content="Dog grooming prices and pet supplies for dogs, cats and small animals at Whisker &amp; Wag in Hatfield and Centurion, Pretoria. Search and filter our range.">
+    <meta property="og:type" content="website">
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="stylesheet" href="css_assets/mystyles.css">
+    <script src="js_assets/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="_images/logo-100.png" srcset="_images/logo-100.png 1x, _images/logo-200.png 2x" alt="Whisker &amp; Wag Pet Co. logo" class="logo" width="50" height="50">
+        <p class="site-name">Whisker &amp; Wag Pet Co.</p>
+        <nav aria-label="Main">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html" aria-current="page">Services</a></li>
+                <li><a href="enquiries.html">Enquire</a></li>
+                <li><a href="about.html">About us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="services-intro">
+            <img src="_images/groomer-with-dog-on-table.jpg" alt="Groomer working with a golden doodle on a grooming table" width="201" height="251">
+            <h1>Grooming Services and Pet Supplies</h1>
+            <p>Everything we offer in one place, from dog grooming in Pretoria to the products we stock in-store. We stock cat food, dog food and small-animal supplies, and our grooming prices are listed below. Want a price for a specific item? <a href="enquiries.html">Send an enquiry</a>.</p>
+        </section>
+
+        <section id="browse">
+            <h2>Search Our Range</h2>
+            <div class="toolbar">
+                <div>
+                    <label for="search">Search</label>
+                    <input type="search" id="search" placeholder="e.g. groom, cat food">
+                </div>
+                <div>
+                    <label for="filter-type">Show</label>
+                    <select id="filter-type">
+                        <option value="all">Everything</option>
+                        <option>Grooming</option>
+                        <option>Dogs</option>
+                        <option>Cats</option>
+                        <option>Small Animals</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="sort">Sort by</label>
+                    <select id="sort">
+                        <option value="name">Name (A–Z)</option>
+                        <option value="price-asc">Price (low to high)</option>
+                        <option value="price-desc">Price (high to low)</option>
+                    </select>
+                </div>
+            </div>
+            <p id="result-count" aria-live="polite"></p>
+            <div id="services-list"></div>
+        </section>
+
+        <section id="faq">
+            <h2>Grooming Questions</h2>
+            <h3><button class="accordion-btn" id="faq1-btn" aria-expanded="false" aria-controls="faq1">How do I book a groom?</button></h3>
+            <div class="accordion-panel" id="faq1" hidden><p>Send us an <a href="enquiries.html">enquiry</a> with your preferred date, or call your nearest branch. Full grooms need two days' notice.</p></div>
+            <h3><button class="accordion-btn" id="faq2-btn" aria-expanded="false" aria-controls="faq2">How long does a full groom take?</button></h3>
+            <div class="accordion-panel" id="faq2" hidden><p>Usually two to three hours, depending on your dog's size and coat.</p></div>
+            <h3><button class="accordion-btn" id="faq3-btn" aria-expanded="false" aria-controls="faq3">Do you groom cats and small animals?</button></h3>
+            <div class="accordion-panel" id="faq3" hidden><p>Our salon focuses on dogs. For cats and small animals, <a href="contact.html">contact a branch</a> and our vet nurses will advise.</p></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Whisker &amp; Wag Pet Co. – Hatfield &amp; Centurion, Pretoria</p>
+    </footer>
+</body>
+</html>
